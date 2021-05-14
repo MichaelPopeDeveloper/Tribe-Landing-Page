@@ -1,8 +1,14 @@
 import React from 'react'
 import { NextPage } from 'next'
 
+// Components
+import Main from '../components/Main';
+import ContentFeed from '../components/ContentFeed';
+
 const Home: NextPage = () => {
- return <h1>Hello, World! Testing!</h1>
+    return <>
+        <Main ContentFeed={ContentFeed} />
+    </>
 }
- 
+
 export default Home
